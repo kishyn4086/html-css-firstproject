@@ -1,0 +1,497 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.navbar{
+    width: 100vw;
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100vw; 
+    height: 3vh;
+    position: fixed;
+    z-index: 99;
+
+}
+
+li a{
+    display: block;
+    font-size: 18px;
+    justify-items: center;
+    height: 3vh;
+    display: flex; /* Flexbox 레이아웃 사용 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+li{
+    list-style: none;
+    padding: 0.5px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+
+
+}
+
+li a:hover{
+   text-decoration: underline;
+  }
+
+.active{
+    text-decoration: underline;
+}
+
+
+.title{
+    font-size: 30px;
+
+}
+
+.content{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 1fr ;
+    float: left;
+    position: absolute;
+}
+
+.info-content{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    float: left;
+    margin-top: 3vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.info-content div{
+    display: block;
+    border: 0.7px solid rgb(0, 0, 0);
+    padding-top: 9px;   
+    padding-left: 9px;   
+    padding-right: 9px;
+}
+
+.small-title{
+ font-size: 18px;
+ margin-bottom: 2vh;
+}
+
+.content-image{
+    width: 20vh;
+    height: auto;
+    position: relative;
+}
+
+
+
+.text{
+    margin-top:3vh;
+    border-left: 1px solid black;
+    padding:9px;
+    overflow: scroll;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.infos span.font-weight {
+    font-weight: 700;
+
+}
+
+.font-weight {
+    font-weight: 700;
+}
+
+
+.infor-form{
+    margin-top: 3vh;
+    padding-top: 9px;
+    padding-left: 9px;
+    font-size:19px;
+}
+
+select{
+    font-size:16px;
+    width: 45vw;
+}
+
+option{
+    font-size: 5px;
+}
+
+.formular{
+    padding-top: 9px;
+}
+
+.formular P{
+    margin-top: 2vh;
+}
+
+input{
+    width: 45vw;
+    border-bottom: 1px solid black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.input-class{
+    /* display: inline-block; */
+    /* position: relative; */
+    width: 1.5vh;
+    height: auto;  
+    margin-top: 9px;
+}
+
+.zustimmung{
+    margin-top: 3vh;
+}
+
+.text-input{
+    width: 45vw;
+    height: 40vh;
+    border:1px solid black;
+}
+
+
+button{
+    background-color: black;
+    color:white;
+    width: 15vh;
+    height: 5vh;
+    font-size: 18px;
+    border: none;
+    margin-top: 3vh;
+}
+
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 0.9px solid black;
+}
+
+.events{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    overflow: scroll;
+    transition: all 0.5s ease;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+.events > p{
+    height: auto;
+    width: 100%;
+}
+
+/* .events > p:nth-child(1){
+    margin-left: 3vh;
+}
+
+.events > p:nth-child(4){
+    margin-right: 3vh;
+} */
+
+
+.event-content{
+    margin-top: 3vh;
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+
+
+.first-event{
+    height: 5vh;
+    transition: all 0.5s ease;
+    
+}
+
+.first-event:hover{
+    background-image: url(./lee1.jpeg);
+    transition: all 0.5s ease;
+    height: 40vh;
+}
+
+
+.second-event{
+    height: 5vh;
+    transition: all 0.5s ease;
+    
+}
+
+.second-event:hover{
+    background-image: url(./lee2.jpeg);
+    transition: all 0.5s ease;
+    height: 40vh;
+}
+
+.third-event{
+    height: 5vh;
+    transition: all 0.5s ease;
+}
+
+.third-event:hover{
+    background-image: url(./lee3.jpeg);
+    transition: all 0.5s ease;
+    height: 40vh;
+}
+
+.fourth-event{
+    height: 5vh;
+    transition: all 0.5s ease;
+}
+
+.fourth-event:hover{
+    
+    background-image: url(./lee4.jpg);
+    transition: all 0.5s ease;
+    height: 40vh;
+}
+
+
+.fifth-event{
+    height: 5vh;
+    transition: all 0.5s ease;
+}
+
+.fifth-event:hover{
+    background-image: url(./lee5.jpeg);
+    transition: all 0.5s ease;
+    height: 40vh;
+}
+
+
+.sixth-event{
+    height: 5vh;
+    transition: all 0.5s ease;
+}
+
+.sixth-event:hover{
+    background-image: url(./lee6.jpeg);
+    transition: all 0.5s ease;
+    height: 40vh;
+}
+
+
+.seventh-event{
+    height: 5vh;
+    transition: all 0.5s ease;
+}
+
+
+.seventh-event:hover{
+    background-image: url(./lee7.jpeg);
+    transition: all 0.5s ease;
+    height: 40vh;
+}
+
+
+.eighth-event{
+    height: 5vh;
+    transition: all 0.5s ease;
+}
+
+.eighth-event:hover{
+    background-image: url(./lee8.jpeg);
+    transition: all 0.5s ease;
+    height: 40vh;
+}
+
+
+.nineth-event{
+    height: 5vh;
+    transition: all 0.5s ease;
+}
+
+.nineth-event:hover{
+    background-image: url(./lee9.jpeg);
+    transition: all 0.5s ease;
+    height: 40vh;
+}
+
+
+.tenth-event{
+    height: 5vh;
+    transition: all 0.5s ease;
+}
+
+.tenth-event:hover{
+    background-image: url(./lee10.jpeg);
+    transition: all 0.5s ease;
+    height: 40vh;
+}
+
+
+.container {
+	position: relative;
+	/* width:100%; */
+	max-width: 100%;
+	height: 100%;
+}
+
+.image {
+	position: absolute;
+	width: 100%;
+    height: 100%;
+	opacity: 0;
+	animation:  change-img-anim 15s  infinite; 
+    object-fit: cover;
+    animation-name: slideShow;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.image:nth-of-type(1) {
+	animation-delay: 0s;
+}
+
+.image:nth-of-type(2) {
+	animation-delay: 5s;
+}
+
+.image:nth-of-type(3) {
+	animation-delay: 10s;
+}
+
+
+
+@keyframes slideShow {
+    0%, 100% { opacity: 0; }
+    5%, 25% { opacity: 1; } /* Image is fully visible for a short time */
+    30%, 95% { opacity: 0; } 
+}
+
+
+
+@media screen and (max-width: 1024px){
+ body{
+     font-size: 13px;
+ }
+}
+
+@media screen and (max-width: 768px){
+
+    li a{
+        font-size: 13px;
+    }
+    
+    .title{
+        font-size: 18px;
+    }
+
+    .small-title{
+        font-size: 16px;
+    }
+   
+
+    .events > P{
+        margin-left: 1vh;
+        margin-top: 1vh
+    }
+
+    .events{
+        height: 12vh;
+    }
+
+    .event-content{
+        width: 100vw;
+        overflow: scroll;
+        top:0;
+        flex-wrap: nowrap;
+        width: 100%;
+
+    }
+
+    .events >p:nth-child(4){
+        display: none;
+    }
+
+    .text-input{
+        width: 70vw;
+        height: 28vh;
+        margin-bottom: 4vh;
+    }
+
+
+}
+
+@media screen and (max-width: 450px){
+
+.formular > p {
+    font-size: 10px;
+}
+
+
+ .info-content{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    overflow: scroll;
+}
+
+.infos{
+    padding-bottom: 5vh;
+}
+
+.content{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 2fr ;
+    position: absolute;
+}
+
+.text{
+    border-left: 0;
+    border-top:1px solid black;
+    margin-top: 0;
+};
+
+
+}
+
+
+
+@media screen and (max-width: 350px){
+  
+}
